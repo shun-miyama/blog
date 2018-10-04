@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'blog/blog.css' %}">
+   
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">       
+    </head>
+    <body>
+
+<div class="page-header">
+    <h1>Akatombo Blog
+        <a href="https://www.facebook.com/Akatombo-web-and-app-development-255355631206532/" target="_blank"><img style="width: 30px;height:30px; display: inline;" src="{% static 'blog/icon.png' %}" alt="My image"></a></h1>
+
+</div>
+<div class="content container">
+    <div class="row">
+        <div class="col-md-8">
+                        {% block content %}
+            {% endblock %}
+        </div>
+    </div>
+</div>
+    </body>
+</html>
